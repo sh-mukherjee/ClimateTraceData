@@ -7,7 +7,7 @@ ui.h1("Electricity Generation Emissions Dashboard")
 
 with ui.sidebar():
     ui.input_select('country', 'Select Country', countries)
-    #ui.input_slider('year', 'Select Year', years[0], years[-1],2022)
+    ui.input_slider('year', 'Select Year', years[0], years[-1],2022)
 
 
 @render_plotly
