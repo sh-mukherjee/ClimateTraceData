@@ -18,5 +18,6 @@ df['country'] = coco.convert(names=df.iso3_country.tolist(), to='name_short', no
 
 countries = df.country.unique().tolist()
 years = df.year.unique().tolist()
-
+# Convert the list of characters to a list of integers
+years = [int(year) for year in years]
 
